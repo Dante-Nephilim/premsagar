@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.secondary-title {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 700;
+}
+
+.secondary-title::before {
+  content: "";
+  background-color: #48bb78;
+  margin-bottom: 1px;
+  display: block;
+  height: 2px;
+  width: 12px;
+  border-radius: 9999px;
+}
+
+.section-paragraph {
+  color: #91a491;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.badge {
+  background-color: #3f5141;
+  border-radius: 0.25rem;
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.selected-circle {
+  border-color: #3f5141;
+  background-color: #48bb78;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a202c;
+  color: rgb(255 255 255);
+  font: Poppins, sans-serif;
+  padding-bottom: 12px;
+}
+
+.selected-text {
+  color: #48bb78;
+}
+.left-50 {
+  left: 50%;
+}
+.right-50 {
+  right: 50%;
+}
+.top-50 {
+  top: 50%;
+}
+
+.left-50 {
+  left: 50%;
+}
+.right-50 {
+  right: 50%;
+}
+.top-50 {
+  top: 50%;
+}
+
+.-z-1 {
+  z-index: -1;
+}
+[id] {
+  scroll-margin-top: 100px;
+}
+
+.left-percentage {
+  left: 5%;
+}
+
+.h-screen-partial {
+  height: 80vh;
+}
+
+.nav-dot {
+  transition: background 200ms, border-color 200ms;
+}
+.nav-dot:hover span {
+  opacity: 1;
+}
+.section {
+  margin: 0 auto;
+  padding: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 80vw;
+  }
+}
+
+.sectionTitle {
+  text-align: center;
+  /* font-weight: normal; */
+  margin-bottom: 1em;
+}
+
+.skillGrid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  grid-auto-rows: 125px;
+}
+
+.skill {
+  display: grid;
+  grid-template-rows: 1fr 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillName {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.5em 0;
+}
