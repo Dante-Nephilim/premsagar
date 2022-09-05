@@ -1,12 +1,17 @@
 import Image from "next/image";
+
 import TicTacToe from "../public/ttt.jpg";
 import FitnessTracker from "../public/ft.jpg";
 import InteriorDesign from "../public/id.jpg";
+import Link from "next/link";
+
 export default function Projects() {
+ 
   return (
     <div
       id="projects"
-      className="container mx-auto my-32 flex w-full items-center justify-between px-8 md:px-14 lg:px-32"
+      
+      className="container myContainer mx-auto my-32 flex w-full items-center justify-between px-8 md:px-14 lg:px-32"
     >
       <section className="w-full">
         <h2 id="work" className="secondary-title">
@@ -23,7 +28,17 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav h-36 w-full rounded-md object-cover lg:h-72"
             />
-            <p className="mt-2 text-xl">Interior Design Website</p>
+            <Link href="/">
+            <a
+              href="https://www.neoframes.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="mt-2 text-xl">
+            Interior Design Website
+            </p>
+            </a>
+          </Link>
           </div>
           <div>
             <Image
@@ -34,7 +49,8 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav h-36 w-full rounded-md object-cover lg:h-72"
             />
-            <p className="mt-2 text-xl">Fitness Tracker</p>
+             <p className="mt-2 text-xl">Fitness Tracker</p>
+            
           </div>
           <div>
             <Image
@@ -45,7 +61,16 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav hidden h-36 w-full rounded-md object-cover md:block lg:h-72"
             />
-            <p className="mt-2 text-xl">Tic Tac Toe</p>
+            <Link href="/">
+            <a
+              href="https://tic-tac-toe-henna-tau.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="mt-2 text-xl">Tic-Tac-Toe</p>
+            </a>
+          </Link>
+           
           </div>
           {/* <Image
             width={500}

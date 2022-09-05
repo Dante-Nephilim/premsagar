@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import JSlogo from "../public/js.png";
 import HTMLlogo from "../public/html-logo.svg";
 import CSSlogo from "../public/css-logo.png";
@@ -6,7 +7,10 @@ import myreactlogo from "../public/reactjs.svg";
 import nextJSLogo from "../public/Next.js-Logo-Vector-730x730.jpg";
 import typescriptlogo from "../public/Typescript_logo_2020.svg.png";
 import tailwindcsslogo from "../public/tw.jpg";
+import { useEffect } from "react";
 export default function Skills() {
+ 
+  
   return (
     <div
       id="skills"
