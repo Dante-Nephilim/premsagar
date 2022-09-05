@@ -6,6 +6,7 @@ import { paths } from "../constants/global.constants";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Clock from 'react-live-clock';
 export default function Hero(props) {
   const {inViewSection}=props;
   // console.log(inViewSection)
@@ -80,10 +81,122 @@ export default function Hero(props) {
         <div className="pad-b"></div>
       </div>
         <div className="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
-        
+          <div className="flex justify-between">
+
           <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">
             Hi, I am Prem Sagar
           </h1>
+          <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Kolkata'}  className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-4xl"/>
+          <div className="macbook">
+  <div className="inner">
+    <div className="screen">
+      <div className="face-one">
+        <div className="camera"></div>
+        <div className="display">
+          <div className="shade"></div>
+        </div>
+        <span>MacBook Air</span>
+      </div>
+      <img src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg" className="logo" />
+    </div>
+    <div className="bodyz">
+      <div className="face-one">
+        <div className="touchpad">
+        </div>
+        <div className="keyboard">
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key space"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+          <div className="key f"></div>
+        </div>
+      </div>
+      <div className="pad one"></div>
+      <div className="pad two"></div>
+      <div className="pad three"></div>
+      <div className="pad four"></div>
+    </div>
+  </div>
+  <div className="shadow"></div>
+</div>
+<div className='links'>
+<a href="https://twitter.com/neoberg" target="_blank" rel="noreferrer">@neoberg</a>
+<a href="mailto:neoberg@gmail.com">contact me</a>
+</div>
+
+
+
+          </div>
           <div className="flex w-full justify-center md:justify-start">
             <a
               href="https://github.com/Dante-Nephilim"
