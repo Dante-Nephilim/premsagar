@@ -1,11 +1,20 @@
 import Image from "next/image";
+import AOS from 'aos'
 import TicTacToe from "../public/ttt.jpg";
 import FitnessTracker from "../public/ft.jpg";
 import InteriorDesign from "../public/id.jpg";
+import Link from "next/link";
+import { useEffect } from "react";
 export default function Projects() {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1200,
+    })
+  },[])
   return (
     <div
       id="projects"
+      data-aos="fade-right"
       className="container mx-auto my-32 flex w-full items-center justify-between px-8 md:px-14 lg:px-32"
     >
       <section className="w-full">
@@ -23,7 +32,17 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav h-36 w-full rounded-md object-cover lg:h-72"
             />
-            <p className="mt-2 text-xl">Interior Design Website</p>
+            <Link href="/">
+            <a
+              href="https://www.neoframes.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="mt-2 text-xl">
+            Interior Design Website
+            </p>
+            </a>
+          </Link>
           </div>
           <div>
             <Image
@@ -34,7 +53,8 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav h-36 w-full rounded-md object-cover lg:h-72"
             />
-            <p className="mt-2 text-xl">Fitness Tracker</p>
+             <p className="mt-2 text-xl">Fitness Tracker</p>
+            
           </div>
           <div>
             <Image
@@ -45,7 +65,16 @@ export default function Projects() {
               layout="intrinsic"
               className="bg-nav hidden h-36 w-full rounded-md object-cover md:block lg:h-72"
             />
-            <p className="mt-2 text-xl">Tic Tac Toe</p>
+            <Link href="/">
+            <a
+              href="https://tic-tac-toe-henna-tau.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="mt-2 text-xl">Tic-Tac-Toe</p>
+            </a>
+          </Link>
+           
           </div>
           {/* <Image
             width={500}

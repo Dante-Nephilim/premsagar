@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AOS from 'aos'
 import JSlogo from "../public/js.png";
 import HTMLlogo from "../public/html-logo.svg";
 import CSSlogo from "../public/css-logo.png";
@@ -6,9 +7,17 @@ import myreactlogo from "../public/reactjs.svg";
 import nextJSLogo from "../public/Next.js-Logo-Vector-730x730.jpg";
 import typescriptlogo from "../public/Typescript_logo_2020.svg.png";
 import tailwindcsslogo from "../public/tw.jpg";
+import { useEffect } from "react";
 export default function Skills() {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1200,
+    })
+  },[])
+  
   return (
     <div
+    data-aos="fade-right"
       id="skills"
       className="container mx-auto mt-32  w-full  px-8 md:px-14  lg:px-32"
     >
