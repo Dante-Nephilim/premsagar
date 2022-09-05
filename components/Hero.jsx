@@ -6,7 +6,9 @@ import { paths } from "../constants/global.constants";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-export default function Hero() {
+export default function Hero(props) {
+  const {inViewSection}=props;
+  // console.log(inViewSection)
   const { asPath } = useRouter();
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function Hero() {
             <Link href={paths.home}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.home ? "selected-circle" : ""
+                  asPath === paths.home || inViewSection==="heroRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#"
               >
@@ -32,7 +34,7 @@ export default function Hero() {
             <Link href={paths.skills}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.skills ? "selected-circle" : ""
+                  asPath === paths.skills  || inViewSection==="skillsRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#skills"
               >
@@ -44,7 +46,7 @@ export default function Hero() {
             <Link href={paths.projects}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.projects ? "selected-circle" : ""
+                  asPath === paths.projects  || inViewSection==="projectsRefInView"? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#projects"
               >
@@ -56,7 +58,7 @@ export default function Hero() {
             <Link href={paths.certifications}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.certifications ? "selected-circle" : ""
+                  asPath === paths.certifications  || inViewSection==="collectionsRefInView"? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#certifications"
               >
