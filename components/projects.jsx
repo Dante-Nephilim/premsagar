@@ -1,21 +1,17 @@
 import Image from "next/image";
-import AOS from 'aos'
+
 import TicTacToe from "../public/ttt.jpg";
 import FitnessTracker from "../public/ft.jpg";
 import InteriorDesign from "../public/id.jpg";
 import Link from "next/link";
-import { useEffect } from "react";
+
 export default function Projects() {
-  useEffect(()=>{
-    AOS.init({
-      duration: 1200,
-    })
-  },[])
+ 
   return (
     <div
       id="projects"
-      data-aos="fade-right"
-      className="container mx-auto my-32 flex w-full items-center justify-between px-8 md:px-14 lg:px-32"
+      
+      className="container myContainer mx-auto my-32 flex w-full items-center justify-between px-8 md:px-14 lg:px-32"
     >
       <section className="w-full">
         <h2 id="work" className="secondary-title">
