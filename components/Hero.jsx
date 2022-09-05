@@ -15,10 +15,12 @@ export default function Hero(props) {
     console.log(asPath);
   }, [asPath]);
   return (
+    
     <div className="container mx-auto mt-16 flex w-full items-center justify-between px-8 md:px-14 lg:px-24 ">
       <div className="flex flex-wrap md:flex-nowrap">
         <nav className="left-percentage fixed z-10 inline-block  hidden lg:mr-24 lg:w-4 xl:block">
           <div className="left-50 absolute  mt-36 -translate-x-1/2 transform space-y-6">
+            
             <Link href={paths.home}>
               <a
                 className={`nav-dot ${
@@ -69,7 +71,16 @@ export default function Hero(props) {
             </Link>
           </div>
         </nav>
+        <div id="pong">
+        <div className="pad-a"></div>
+        <div className="ball"></div>
+        <div className="overlayed">
+           
+        </div>
+        <div className="pad-b"></div>
+      </div>
         <div className="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
+        
           <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">
             Hi, I am Prem Sagar
           </h1>
@@ -100,6 +111,7 @@ export default function Hero(props) {
               </button>
             </a>
           </div>
+          
         </div>
         {/* <Image
           width={500}
