@@ -135,3 +135,124 @@ body {
   text-align: center;
   margin: 0.5em 0;
 }
+@keyframes pad-a {
+  0% {
+    transform: translate3d(5vw, 50vh, 0);
+  }
+  20% {
+    transform: translate3d(5vw, 25vh, 0);
+  }
+  40% {
+    transform: translate3d(5vw, 45vh, 0);
+  }
+  60% {
+    transform: translate3d(5vw, 35vh, 0);
+  }
+  80% {
+    transform: translate3d(5vw, 10vh, 0);
+  }
+  100% {
+    transform: translate3d(5vw, 50vh, 0);
+  }
+}
+@keyframes pad-b {
+  0% {
+    transform: translate3d(70vw, 50vh, 0);
+  }
+  10% {
+    transform: translate3d(70vw, 15vh, 0);
+  }
+  30% {
+    transform: translate3d(70vw, 35vh, 0);
+  }
+  50% {
+    transform: translate3d(70vw, 55vh, 0);
+  }
+  70% {
+    transform: translate3d(70vw, 15vh, 0);
+  }
+  90% {
+    transform: translate3d(70vw, 35vh, 0);
+  }
+  100% {
+    transform: translate3d(70vw, 50vh, 0);
+  }
+}
+@keyframes ball {
+  0% {
+    transform: translate3d(5vw, 55vh, 0);
+  }
+  10% {
+    transform: translate3d(70vw, 20vh, 0);
+  }
+  20% {
+    transform: translate3d(5vw, 30vh, 0);
+  }
+  30% {
+    transform: translate3d(70vw, 40vh, 0);
+  }
+  40% {
+    transform: translate3d(5vw, 50vh, 0);
+  }
+  50% {
+    transform: translate3d(70vw, 60vh, 0);
+  }
+  60% {
+    transform: translate3d(5vw, 40vh, 0);
+  }
+  70% {
+    transform: translate3d(70vw, 20vh, 0);
+  }
+  80% {
+    transform: translate3d(5vw, 15vh, 0);
+  }
+  90% {
+    transform: translate3d(70vw, 40vh, 0);
+  }
+  100% {
+    transform: translate3d(5vw, 55vh, 0);
+  }
+}
+
+#pong .pad-a {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 80px;
+  background-color: white;  
+  animation: pad-a 10s infinite ease-in;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  z-index: -3;
+
+}
+#pong .pad-b {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 80px;
+  background-color: white;  
+  animation: pad-b 10s infinite ease-in;
+  border-radius: 5px;
+  z-index: -3;
+}
+#pong .ball {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-color: white;  
+  animation: ball 10s infinite linear;
+  border-radius: 5px;
+  z-index: -3;
+}
+
+#pong .overlayed {
+    z-index: 3;
+    position: absolute;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: sans-serif;
+}
+
