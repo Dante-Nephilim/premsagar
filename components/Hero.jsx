@@ -87,7 +87,7 @@ export default function Hero(props) {
             Hi, I am Prem Sagar
           </h1>
           <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Kolkata'}  className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-4xl"/>
-          <div className="macbook">
+          {/* <div className="macbook">
   <div className="inner">
     <div className="screen">
       <div className="face-one">
@@ -188,7 +188,7 @@ export default function Hero(props) {
     </div>
   </div>
   <div className="shadow"></div>
-</div>
+</div> */}
 <div className='links'>
 <a href="https://twitter.com/neoberg" target="_blank" rel="noreferrer">@neoberg</a>
 <a href="mailto:neoberg@gmail.com">contact me</a>
