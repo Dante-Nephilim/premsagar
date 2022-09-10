@@ -6,9 +6,9 @@ import { paths } from "../constants/global.constants";
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import Clock from 'react-live-clock';
+import Clock from "react-live-clock";
 export default function Hero(props) {
-  const {inViewSection}=props;
+  const { inViewSection } = props;
   // console.log(inViewSection)
   const { asPath } = useRouter();
 
@@ -16,16 +16,16 @@ export default function Hero(props) {
     console.log(asPath);
   }, [asPath]);
   return (
-    
     <div className="container mx-auto mt-16 flex w-full items-center justify-between px-8 md:px-14 lg:px-24 ">
       <div className="flex flex-wrap md:flex-nowrap">
         <nav className="left-percentage fixed z-10 inline-block  hidden lg:mr-24 lg:w-4 xl:block">
           <div className="left-50 absolute  mt-36 -translate-x-1/2 transform space-y-6">
-            
             <Link href={paths.home}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.home || inViewSection==="heroRefInView" ? "selected-circle" : ""
+                  asPath === paths.home || inViewSection === "heroRefInView"
+                    ? "selected-circle"
+                    : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#"
               >
@@ -37,7 +37,9 @@ export default function Hero(props) {
             <Link href={paths.skills}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.skills  || inViewSection==="skillsRefInView" ? "selected-circle" : ""
+                  asPath === paths.skills || inViewSection === "skillsRefInView"
+                    ? "selected-circle"
+                    : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#skills"
               >
@@ -49,7 +51,10 @@ export default function Hero(props) {
             <Link href={paths.projects}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.projects  || inViewSection==="projectsRefInView"? "selected-circle" : ""
+                  asPath === paths.projects ||
+                  inViewSection === "projectsRefInView"
+                    ? "selected-circle"
+                    : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#projects"
               >
@@ -61,7 +66,10 @@ export default function Hero(props) {
             <Link href={paths.certifications}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.certifications  || inViewSection==="collectionsRefInView"? "selected-circle" : ""
+                  asPath === paths.certifications ||
+                  inViewSection === "collectionsRefInView"
+                    ? "selected-circle"
+                    : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#certifications"
               >
@@ -73,129 +81,30 @@ export default function Hero(props) {
           </div>
         </nav>
         <div id="pong">
-        <div className="pad-a"></div>
-        <div className="ball"></div>
-        <div className="overlayed">
-           
+          <div className="pad-a"></div>
+          <div className="ball"></div>
+          <div className="overlayed"></div>
+          <div className="pad-b"></div>
         </div>
-        <div className="pad-b"></div>
-      </div>
         <div className="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
           <div className="flex justify-between">
+          <div className="hero-section">
+              <h1>eat.</h1>
+              <h1>sleep.</h1>
+              <h1>Code.</h1>
+              <h1>repeat.</h1>
+            </div>
+            <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">
+              Hi, I am Prem Sagar
+            </h1>
 
-          <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">
-            Hi, I am Prem Sagar
-          </h1>
-          <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Kolkata'}  className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-4xl"/>
-          {/* <div className="macbook">
-  <div className="inner">
-    <div className="screen">
-      <div className="face-one">
-        <div className="camera"></div>
-        <div className="display">
-          <div className="shade"></div>
-        </div>
-        <span>MacBook Air</span>
-      </div>
-      <img src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg" className="logo" />
-    </div>
-    <div className="bodyz">
-      <div className="face-one">
-        <div className="touchpad">
-        </div>
-        <div className="keyboard">
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key space"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-          <div className="key f"></div>
-        </div>
-      </div>
-      <div className="pad one"></div>
-      <div className="pad two"></div>
-      <div className="pad three"></div>
-      <div className="pad four"></div>
-    </div>
-  </div>
-  <div className="shadow"></div>
-</div> */}
-<div className='links'>
-<a href="https://twitter.com/neoberg" target="_blank" rel="noreferrer">@neoberg</a>
-<a href="mailto:neoberg@gmail.com">contact me</a>
-</div>
-
-
-
+            <Clock
+              format={"HH:mm:ss"}
+              ticking={true}
+              timezone={"Asia/Kolkata"}
+              className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-4xl"
+            />
+            
           </div>
           <div className="flex w-full justify-center md:justify-start">
             <a
@@ -224,7 +133,6 @@ export default function Hero(props) {
               </button>
             </a>
           </div>
-          
         </div>
         {/* <Image
           width={500}
