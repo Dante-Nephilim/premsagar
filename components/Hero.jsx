@@ -23,59 +23,41 @@ export default function Hero(props) {
             <Link href={paths.home}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.home || inViewSection === "heroRefInView"
-                    ? "selected-circle"
-                    : ""
+                  inViewSection === "heroRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#"
               >
-                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
-                  Home
-                </span>
+                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">Home</span>
               </a>
             </Link>
             <Link href={paths.skills}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.skills || inViewSection === "skillsRefInView"
-                    ? "selected-circle"
-                    : ""
+                  inViewSection === "skillsRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#skills"
               >
-                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
-                  Skills
-                </span>
+                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">Skills</span>
               </a>
             </Link>
             <Link href={paths.projects}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.projects ||
-                  inViewSection === "projectsRefInView"
-                    ? "selected-circle"
-                    : ""
+                  inViewSection === "projectsRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#projects"
               >
-                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
-                  Projects
-                </span>
+                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">Projects</span>
               </a>
             </Link>
             <Link href={paths.certifications}>
               <a
                 className={`nav-dot ${
-                  asPath === paths.certifications ||
-                  inViewSection === "collectionsRefInView"
-                    ? "selected-circle"
-                    : ""
+                  inViewSection === "collectionsRefInView" ? "selected-circle" : ""
                 } border-nav bg-body block h-7 w-7 rounded-full border-4`}
                 href="#certifications"
               >
-                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">
-                  Certifications
-                </span>
+                <span className="ml-10 rounded-md bg-black px-2 py-1 opacity-0">Certifications</span>
               </a>
             </Link>
           </div>
@@ -88,15 +70,13 @@ export default function Hero(props) {
         </div>
         <div className="mt-0 flex max-w-xl flex-wrap justify-center md:my-36 md:justify-start lg:ml-20">
           <div className="flex justify-between">
-          <div className="hero-section">
+            <div className="hero-section">
               <h1>eat.</h1>
               <h1>sleep.</h1>
               <h1>Code.</h1>
               <h1>repeat.</h1>
             </div>
-            <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">
-              Hi, I am Prem Sagar
-            </h1>
+            <h1 className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-7xl">Hi, I am Prem Sagar</h1>
 
             <Clock
               format={"HH:mm:ss"}
@@ -104,14 +84,9 @@ export default function Hero(props) {
               timezone={"Asia/Kolkata"}
               className="text-centre text-4xl font-bold md:text-left md:text-6xl lg:text-4xl"
             />
-            
           </div>
           <div className="flex w-full justify-center md:justify-start">
-            <a
-              href="https://github.com/Dante-Nephilim"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Dante-Nephilim" target="_blank" rel="noreferrer">
               <button className="mt-12 flex items-center space-x-3 rounded-sm bg-primary px-8 py-4 font-bold text-white">
                 <div>
                   <svg
