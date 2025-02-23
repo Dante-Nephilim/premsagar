@@ -3,7 +3,7 @@
   --bg-secondary: hsl(0, 0%, 97%);
   --primary-text: hsl(0, 0%, 9%);
   --inverted-text: hsl(0, 0%, 100%);
-  --highlight: hsl(224, 70%, 60%);
+  --highlight: hsl(224, 60%, 56%);
 }
 
 @media (prefers-color-scheme: dark) {
