@@ -99,10 +99,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta
-          property="og:image"
-          content="https://premsagar.netlify.app/api/og"
-        ></meta>
+        <meta property="og:image" content="https://premsagar.netlify.app/api/og"></meta>
       </Head>
       <div className="page">
         <section id="hero">
@@ -111,38 +108,29 @@ export default function Home() {
             <p className="name">
               My name is <span className="highlighted-text">Prem Sagar</span>
             </p>
+            <span className="caption-group">
+              <p className="caption">-- Award Winning</p>
+              <p className="caption">-- W3 Certified Full Stack Developer</p>
+              <p className="caption">-- B.Tech from NIT Delhi</p>
+            </span>
             <p className="description">
-              I am a{" "}
-              <span className="highlighted-text">Full Stack Developer</span>{" "}
-              passionate about latest web technologies. Other than programming,
-              I like gaming and traveling.
+              I am a <span className="highlighted-text">Full Stack Developer</span> passionate about latest web
+              technologies. Other than programming, I like gaming and traveling.
             </p>
             <a href={LINKEDIN_URL} className="primary-cta" target="_blank">
               <MdiLinkedin />
               Contact me
             </a>
             <div className="cta-group">
-              <a
-                href={GITHUB_URL}
-                className="secondary-cta-btn"
-                target="_blank"
-              >
+              <a href={GITHUB_URL} className="secondary-cta-btn" target="_blank">
                 <MdiGithub />
                 GitHub
               </a>
-              <a
-                href={HACKERRANK_URL}
-                className="secondary-cta-btn"
-                target="_blank"
-              >
+              <a href={HACKERRANK_URL} className="secondary-cta-btn" target="_blank">
                 <TablerBrandHackerrank />
                 HackerRank
               </a>
-              <a
-                href={PLURALSIGHT_URL}
-                className="secondary-cta-btn"
-                target="_blank"
-              >
+              <a href={PLURALSIGHT_URL} className="secondary-cta-btn" target="_blank">
                 <SimpleIconsPluralsight />
                 PluralSight
               </a>
@@ -178,11 +166,8 @@ export default function Home() {
                 </p>
                 <p className="description">
                   Won
-                  <span className="highlighted-text">
-                    &apos;Raving Fan&apos;
-                  </span>{" "}
-                  Award within 7 months of starting my career, for building rate
-                  limiter used by multiple projects in the company
+                  <span className="highlighted-text">&apos;Raving Fan&apos;</span> Award within 7 months of starting my
+                  career, for building rate limiter used by multiple projects in the company
                 </p>
               </div>
             </li>
@@ -192,9 +177,7 @@ export default function Home() {
                   <MdiStarFourPointsOutline />
                   Increment within 2 months
                 </p>
-                <p className="description">
-                  Received an increment within 2 months of joining the company
-                </p>
+                <p className="description">Received an increment within 2 months of joining the company</p>
               </div>
             </li>
             <li className="achievement">
@@ -219,11 +202,7 @@ export default function Home() {
                 <MdiStarFourPointsOutline />
                 <div>
                   <span>{certificate.name} : </span>
-                  <a
-                    href={certificate.link}
-                    target="_blank"
-                    className="view-btn"
-                  >
+                  <a href={certificate.link} target="_blank" className="view-btn">
                     View
                     <TablerExternalLink />
                   </a>
