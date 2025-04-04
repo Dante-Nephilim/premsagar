@@ -109,9 +109,15 @@ export default function Home() {
               My name is <span className="highlighted-text">Prem Sagar</span>
             </p>
             <span className="caption-group">
-              <p className="caption">-- Award Winning</p>
-              <p className="caption">-- W3 Certified Full Stack Developer</p>
-              <p className="caption">-- B.Tech from NIT Delhi</p>
+              <p className="caption">
+                <span style={{ color: "#3bdea5" }}>- </span> NIT Delhi
+              </p>
+              <p className="caption">
+                <span style={{ color: "#3bdea5" }}>- </span> Award Winning
+              </p>
+              <p className="caption">
+                <span style={{ color: "#3bdea5" }}>- </span> W3 Certified Full Stack Developer
+              </p>
             </span>
             <p className="description">
               I am a <span className="highlighted-text">Full Stack Developer</span> passionate about latest web
