@@ -14,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Prem Sagar | Full Stack Developer",
-  description: "Prem Sagar developer portfolio",
+  title: "Prem Sagar | NIT Delhi | Full Stack Developer",
+  description: "Prem Sagar, NIT Delhi, Award winning W3 Certified Full Stack developer portfolio",
 };
 
 export default function RootLayout({
@@ -25,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable}`}>
-        {children}
-      </body>
+      <body className={`${inter.variable} ${poppins.variable}`}>{children}</body>
     </html>
   );
 }
